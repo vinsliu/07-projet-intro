@@ -1,10 +1,10 @@
 function Dish({ image, name, price }) {
   return (
-    <div>
+    <article>
       <img src={image} alt="image" />
       <h3>{name}</h3>
       <span>{price}</span>
-    </div>
+    </article>
   );
 }
 export default Dish;
