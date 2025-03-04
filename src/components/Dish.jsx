@@ -5,7 +5,7 @@ function Dish({ image, name, price, isNew = false }) {
   return (
     <Card className="Card">
       <Card.Img variant="top" src={image} alt={name} />
-      {isNew === true ? <Badge>Nouveau</Badge> : ""}
+      {isNew === true && <Badge>Nouveau</Badge>}
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{price}</Card.Text>
