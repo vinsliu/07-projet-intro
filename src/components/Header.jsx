@@ -1,8 +1,5 @@
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
-import "../assets/css/Header.scss";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import "../assets/css/header.scss";
 
 function Header() {
   return (
