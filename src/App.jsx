@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Dish from "./components/Dish";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

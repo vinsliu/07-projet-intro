@@ -1,3 +1,5 @@
+import "../assets/css/Dish.scss";
+
 function Dish({ image, name, price }) {
   return (
     <article>
