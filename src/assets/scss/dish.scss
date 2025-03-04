@@ -3,6 +3,12 @@ main {
 }
 
 .Card {
+  position: relative;
+  .badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
   img {
     height: 250px;
     object-fit: cover;

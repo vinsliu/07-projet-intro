@@ -16,6 +16,7 @@ function App() {
                 image="https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795_960_720.jpg"
                 name="Tacos à l’unité"
                 price="3€"
+                isNew={true}
               />
             </Col>
             <Col>
