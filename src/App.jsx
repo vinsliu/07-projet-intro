@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Header />
-      <Container fluid="md">
-        <main>
+      <main>
+        <Container fluid="md">
           <Row>
             <Col>
               <Dish
@@ -33,8 +33,8 @@ function App() {
               />
             </Col>
           </Row>
-        </main>
-      </Container>
+        </Container>
+      </main>
       <Footer />
     </>
   );
