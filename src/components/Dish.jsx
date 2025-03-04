@@ -8,7 +8,7 @@ function Dish({ image, name, price, isNew = false }) {
       {isNew === true && <Badge>Nouveau</Badge>}
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text>{price}</Card.Text>
+        <Card.Text>{price}€</Card.Text>
       </Card.Body>
     </Card>
   );
