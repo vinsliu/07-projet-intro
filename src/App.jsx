@@ -13,7 +13,7 @@ function App() {
         "https://cdn.pixabay.com/photo/2016/08/23/08/53/tacos-1613795_960_720.jpg",
       price: 3,
       isNew: true,
-      active: 12,
+      stock: 12,
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ function App() {
       image:
         "https://cdn.pixabay.com/photo/2014/01/14/22/13/mexican-245240_960_720.jpg",
       price: 12,
-      active: 0,
+      stock: 0,
     },
     {
       id: 3,
@@ -29,11 +29,11 @@ function App() {
       image:
         "https://cdn.pixabay.com/photo/2021/02/04/03/57/mole-5980185_960_720.jpg",
       price: 15,
-      active: 5,
+      stock: 5,
     },
   ];
 
-  const filteredDishes = dishes.filter((dish) => dish.active);
+  const filteredDishes = dishes.filter((dish) => dish.stock);
 
   return (
     <>
