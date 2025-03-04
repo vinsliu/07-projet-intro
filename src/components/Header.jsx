@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import "../assets/css/header.scss";
+import "../assets/scss/header.scss";
 
 function Header() {
   return (
@@ -13,9 +13,12 @@ function Header() {
               className="navbarbrand"
             />
           </Navbar.Brand>
-          <Nav>
-            <Nav.Link href="/">Accueil</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="/">Accueil</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>

@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import "../assets/css/dish.scss";
+import "../assets/scss/dish.scss";
 
 function Dish({ image, name, price }) {
   return (
