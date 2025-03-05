@@ -12,7 +12,7 @@ function Dish({ image, name, price, isNew = false }) {
         <Button
           variant="primary"
           onClick={() =>
-            alert(`Le plat ${name} est maintenant dans votre panier`)
+            alert(`Le plat ${name} est maintenant dans votre panier.`)
           }
         >
           Ajouter au panier
