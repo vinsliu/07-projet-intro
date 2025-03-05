@@ -3,7 +3,8 @@ import Footer from "./components/Footer";
 import Dish from "./components/Dish";
 import "./App.scss";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import CartContext from "./context/CartContext";
 
 function App() {
   const dishes = [
@@ -43,6 +44,18 @@ function App() {
     (dish) => dish.stock > 0 && (!showNewOnly || dish.isNew)
   );
 
+  const { cartCount } = useContext(CartContext);
+  const prevCartCountRef = useRef(cartCount);
+
+  useEffect(() => {
+    if (prevCartCountRef.current !== cartCount) {
+      console.log(
+        `Le panier est passé de ${prevCartCountRef.current} à ${cartCount} articles. `
+      );
+      prevCartCountRef.current = cartCount;
+    }
+  }, [cartCount]);
+
   return (
     <>
       <Header />
@@ -51,6 +64,7 @@ function App() {
           <Button onClick={handleShowNewOnly} className="mb-2">
             {!showNewOnly ? "Nouveautés uniquement" : "Vois tous les plats"}
           </Button>
+          <p>Le panier est passé de {prevCartCountRef.current} à {cartCount} articles. </p>
           <Row>
             {filteredDishes.map((dish) => (
               <Col md={4} key={dish.id}>
