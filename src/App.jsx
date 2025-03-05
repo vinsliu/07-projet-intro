@@ -43,14 +43,9 @@ function App() {
     (dish) => dish.stock > 0 && (!showNewOnly || dish.isNew)
   );
 
-  const [cartCount, setCartCount] = useState(0);
-  const addToCart = () => {
-    setCartCount((count) => count + 1);
-  };
-
   return (
     <>
-      <Header cartCount={cartCount}/>
+      <Header />
       <main>
         <Container>
           <Button onClick={handleShowNewOnly} className="mb-2">
@@ -64,7 +59,6 @@ function App() {
                   name={dish.name}
                   price={dish.price}
                   isNew={dish.isNew}
-                  addToCart={addToCart}
                 />
               </Col>
             ))}
