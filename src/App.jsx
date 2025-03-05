@@ -64,7 +64,10 @@ function App() {
           <Button onClick={handleShowNewOnly} className="mb-2">
             {!showNewOnly ? "Nouveautés uniquement" : "Vois tous les plats"}
           </Button>
-          <p>Le panier est passé de {prevCartCountRef.current} à {cartCount} articles. </p>
+          <p>
+            Le panier est passé de {prevCartCountRef.current} à {cartCount}{" "}
+            articles.{" "}
+          </p>
           <Row>
             {filteredDishes.map((dish) => (
               <Col md={4} key={dish.id}>
