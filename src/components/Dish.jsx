@@ -11,7 +11,7 @@ function Dish({ image, name, price, isNew = false }) {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{price}€</Card.Text>
-        <Button variant="primary" onClick={increment}>
+        <Button variant="primary" onClick={increment} className="me-2">
           Ajouter au panier
         </Button>
         <Button variant="primary" onClick={decrement}>
